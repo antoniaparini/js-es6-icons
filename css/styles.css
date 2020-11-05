@@ -1,44 +1,42 @@
 //GENERAL STYLES
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-  
 
-body {
-    font-family: 'Rubik', sans-serif;
-    /*background-color: blueviolet;/*debug*/
-}
-  
-/*LAYOUT*/
-  
 .container {
+    font-family: sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-  }
+}
 
 /*HEADER*/
 
 .header {
-padding: 20px;
-font-size: 40px;
-font-family: 'Acme', sans-serif;
-color: dodgerblue;
+    background: #fff;
+    padding: 20px;
+}
+
+.header .logo {
+    color: #0091ff;
+    font-size: 38px;
+    font-family: 'Acme', sans-serif;
 }
 
 /*SEARCH*/
 
 .search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    color:#ffffff;
+    background:#0091ff;
+    color: #fff;
     text-transform: uppercase;
-    background-color: dodgerblue;
+    padding: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search select {
@@ -48,32 +46,30 @@ color: dodgerblue;
 /*ICONS*/
 
 .icons {
-    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    flex-grow: 1;
     padding: 20px;
     background: #ddd;
+    align-content: flex-start;
 }
 
-.icons .icon{
-    flex-basis: calc (100% / 6 - 20px);
+.icons .icon {
+    width: calc(100%/6 - 20px);
+    background: #fff;
+    padding: 50px;
     margin: 20px 10px;
-    padding: 20px;
     text-align: center;
+    border-radius: 10px;
+}
+
+.icon i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.icon .title {
     text-transform: uppercase;
     font-size: 14px;
-    border-radius: 10px;
-    background: #ffffff;
+    font-weight: 700;
 }
-
-.icons .icon i {
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-  
-
-
-
-
